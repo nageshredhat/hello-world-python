@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM registry.access.redhat.com/ubi9/python-39:1-172
 WORKDIR /service
 COPY requirements.txt .
 RUN pip install -r requirements.txt
